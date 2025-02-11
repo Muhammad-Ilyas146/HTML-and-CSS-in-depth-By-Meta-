@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Bar Chart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 80%;
+            max-width: 1000px;
+            height: 300px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 50px;
+            background-color: #007bff;
+            border-radius: 5px 5px 0 0;
+            transition: background-color 0.3s;
+        }
+
+        .bar:hover {
+            background-color: #0056b3;
+        }
+
+        .bar-label {
+            color: white;
+            padding: 5px;
+        }
+
+        .bar1 { height: 60%; }
+        .bar2 { height: 80%; }
+        .bar3 { height: 50%; }
+        .bar4 { height: 90%; }
+        .bar5 { height: 70%; }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <div class="bar bar1"><span class="bar-label">60%</span></div>
+        <div class="bar bar2"><span class="bar-label">80%</span></div>
+        <div class="bar bar3"><span class="bar-label">50%</span></div>
+        <div class="bar bar4"><span class="bar-label">90%</span></div>
+        <div class="bar bar5"><span class="bar-label">70%</span></div>
+    </div>
+</body>
+</html>
